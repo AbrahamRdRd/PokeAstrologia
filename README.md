@@ -1,3 +1,5 @@
-main.html
+---
+permalink: /main.html
+---
 # PokeAstrologia
 
