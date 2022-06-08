@@ -7,6 +7,27 @@ async function getPokemon(id) {
 
 // ---- Deafault Pokemon ----//
 
+async function defaultPokemon1() {
+  const pokemon = await getPokemon(245);
+  updatePokemon(pokemon);
+}
+
+defaultPokemon1();
+
+async function defaultPokemon2() {
+  const pokemon = await getPokemon(249);
+  secondUpdatePokemon(pokemon);
+}
+
+defaultPokemon2();
+
+async function defaultPokemon3() {
+  const pokemon = await getPokemon(250);
+  thirdUpdatePokemon(pokemon);
+}
+
+defaultPokemon3();
+
 
 async function init2() {
   const dayBirth = document.getElementById('selectDayBirthday');
@@ -50,7 +71,7 @@ async function init3() {
 //---- Info Pkemon ----//
 
 function updatePokemon(pokemon){
-  console.log(pokemon);
+  //console.log(pokemon);
   window.image.setAttribute('src', pokemon.sprites.other.dream_world.front_default);
   window.pokemon.textContent = pokemon.name;
   window.weight.textContent = pokemon.weight/10;
