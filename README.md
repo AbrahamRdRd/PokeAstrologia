@@ -1,2 +1,3 @@
-# PokeAstrologia
+permalink: /index.html
+
 # PokeAstrologia
